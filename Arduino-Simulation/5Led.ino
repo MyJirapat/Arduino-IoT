@@ -1,13 +1,6 @@
-/* 8 LEDs blinking at random intervals without delay
- Using the millis method you don't have to wait for an operation to happen before executing the next bit of code.  
- If you don't use this method you can't overlap state changes.
- */
 
-// constants won't change. Used here to 
-// set pin numbers:
 
 const int ledPin4 = 1;
-
 const int ledPin6 = 4;
 const int ledPin7 = 3;
 const int ledPin8 = 5;
@@ -46,7 +39,6 @@ long interval8 = 3000;
 long intervalBuzz = 150;// interval at which to blink (milliseconds)
 
 void setup() {
-  
   pinMode(ledPin4, OUTPUT); 
   //pinMode(ledPin5, OUTPUT); 
   //pinMode(ledPin6, OUTPUT); 
@@ -89,8 +81,6 @@ void loop()
     // set the LED with the ledState of the variable:
     digitalWrite(ledPin4, ledState4);
   }
-
-
 
   unsigned long currentMillis5 = millis();
   if(currentMillis5 - previousMillis5 > random(200, interval5)) {

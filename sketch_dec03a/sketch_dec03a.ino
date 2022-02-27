@@ -6,7 +6,6 @@ void setup (){
      pinMode (kPinButton1, INPUT);
      digitalWrite(kPinButton1, HIGH);
      pinMode(kPinLed, OUTPUT); 
-
     }
 
 void loop(){
