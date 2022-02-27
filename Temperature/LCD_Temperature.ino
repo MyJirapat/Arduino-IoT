@@ -33,8 +33,9 @@ void loop() {
   // put your main code here, to run repeatedly:
   humidity = dht.readHumidity();
   temperature = dht.readTemperature();
-  String hum =  "Light: " + String(humidity);
-  String temp = "Intensity: " + String(temperature);
+
+  String hum =  "Humi: " + String(humidity);
+  String temp = "Temp: " + String(temperature);
   lcd.setCursor(0, 0);
   lcd.print(hum);
   lcd.setCursor(0, 1);      
