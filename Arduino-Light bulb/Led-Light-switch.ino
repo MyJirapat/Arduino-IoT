@@ -1,7 +1,4 @@
 
-
-
-
 const int kPinButton1 = D3;
 const int kPinLed = D4;
 
