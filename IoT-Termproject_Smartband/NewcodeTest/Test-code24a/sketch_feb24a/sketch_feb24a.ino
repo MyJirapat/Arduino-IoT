@@ -23,7 +23,6 @@ void setup()
 
 void loop(){
   mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
-  // แปลงค่าแกนให้เป็นมุม 0-180 องศา
   ax = map(ax, -18000, 18000, 0, 180);
   ay = map(ay, -18000, 18000, 0, 180);
   az = map(az, -18000, 18000, 0, 180);
@@ -61,34 +60,9 @@ void loop(){
     previous = millis()/1000;
     Serial.println("my");
   }
-//  digitalWrite(buzzerPin, LOW);
+  noTone(buzzerPin);
   delay(50);
 
-//  axis = (ax + ay + az)/3;
-//  Serial.println("axis : ");
-//  Serial.print(axis);
-//
-////  current = millis()/1000 - previous;
-//  Serial.print("Time : ");
-//  Serial.println(current);
-//  if (current > 40) {
-//    previous = millis()/1000;
-//    tone(buzzerPin, 500);
-//    delay(1000);
-//  }
-//  noTone(buzzerPin);
-//  delay(1000);
-//  Serial.print("Axyz \t");
-//  Serial.print(ax); Serial.print("\t");
-//  Serial.print(ay); Serial.print("\t");
-//  Serial.print(az); Serial.print("\t");
-//  Serial.print("Gxyz \t");
-//  Serial.print(gx); Serial.print("\t");
-//  Serial.print(gy); Serial.print("\t");
-//  Serial.println(gz);
-//
-//  delay(50);
-//  
 }
 
 
