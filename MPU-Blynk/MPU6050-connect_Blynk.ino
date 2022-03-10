@@ -24,8 +24,6 @@ double x;
 double y;
 double z;
 
-
-
 MPU6050 mpu; //ประกาศตัวแปร mpu
 int16_t ax, ay, az;
 int16_t gx, gy, gz;
