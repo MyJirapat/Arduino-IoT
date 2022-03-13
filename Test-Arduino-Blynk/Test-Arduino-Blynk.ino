@@ -1,4 +1,4 @@
-/*#include<Wire.h>
+#include<Wire.h>
 #define BLYNK_PRINT Serial
 #include <Blynk.h>
 #include <ESP8266WiFi.h>
@@ -65,7 +65,7 @@ Blynk.virtualWrite(V3, y);
 Blynk.virtualWrite(V4, z);
  
 delay(1000);
-}*/
+}
 
 /*************************************************************
   This is a simple demo of sending and receiving some data.
